@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Demo from "./Demo.jsx";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
+import Login from "./Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/demo",
     element: <Demo />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
